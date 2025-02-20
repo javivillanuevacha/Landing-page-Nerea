@@ -1,0 +1,351 @@
+<!-- 
+    Nombre del proyecto: Psicóloga Nerea Ternero
+    Autor: [Tu nombre]
+    Fecha: [Fecha actual]
+    Descripción: Landing page para psicóloga especialista en terapia individual, 
+                 de pareja y familiar.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags para SEO y responsive -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Psicóloga especialista en Sevilla. Terapia individual, de pareja y familiar. Primera consulta gratuita.">
+    <meta name="keywords" content="psicóloga, terapia, Sevilla, ansiedad, depresión, parejas">
+    
+    <title>Nerea Ternero | Psicóloga Especialista en Sevilla</title>
+    
+    <!-- Enlaces a recursos externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a hoja de estilos propia -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación fija -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <!-- Logo y Nombre -->
+        <div class="navbar-brand-container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo 1.png" alt="Logo Nerea Ternero" class="nav-logo">
+                <span class="brand-text">Nerea Ternero </span>
+            </a>
+        </div>
+        
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/sobremi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/areasdetrabajo.html">Área de trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Sección Hero / Inicio -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texto principal -->
+                <div class="col-lg-6">
+                    <h4 class="text-accent mb-3">PSICÓLOGA ESPECIALISTA EN SEVILLA</h4>
+                    <h1>Recupera tu bienestar emocional y vive la vida que mereces</h1>
+                    <p>¿Sientes que la ansiedad, el estrés o la inseguridad te impiden disfrutar plenamente? 
+                       Te acompaño en tu camino hacia el bienestar emocional con terapia personalizada y efectiva.</p>
+                    <a href="#contacto" class="cta-button">RESERVA TU PRIMERA SESIÓN GRATUITA</a>
+                </div>
+                <!-- Imagen principal -->
+                <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+                    <img src="img/sobremi.jpg" alt="Nerea Ternero" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="py-5" id="servicios">
+        <div class="container py-5">
+            <!-- Encabezado de sección -->
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Servicios Especializados</h2>
+                <p class="lead text-muted">Terapia personalizada para cada etapa de tu vida</p>
+            </div>
+            
+            <!-- Tarjetas de servicios -->
+            <div class="row g-4">
+                <!-- Terapia Individual -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <h3>Terapia Individual</h3>
+                        <p>Un espacio seguro y confidencial donde trabajaremos juntos para superar:</p>
+                        <ul class="mt-3">
+                            <li>Ansiedad y estrés</li>
+                            <li>Depresión</li>
+                            <li>Autoestima</li>
+                            <li>Problemas de relaciones</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Terapia de Pareja -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Terapia de Pareja</h3>
+                        <p>Mejora tu relación a través de:</p>
+                        <ul class="mt-3">
+                            <li>Comunicación efectiva</li>
+                            <li>Resolución de conflictos</li>
+                            <li>Reconstrucción de confianza</li>
+                            <li>Fortalecimiento del vínculo</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Terapia Familiar -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-house-heart"></i>
+                        </div>
+                        <h3>Terapia Familiar</h3>
+                        <p>Construye una familia más fuerte mediante:</p>
+                        <ul class="mt-3">
+                            <li>Mejora de la comunicación</li>
+                            <li>Establecimiento de límites</li>
+                            <li>Gestión de conflictos</li>
+                            <li>Vínculos saludables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Áreas de Trabajo -->
+<section id="areas-trabajo" class="py-5 bg-light">
+    <div class="container">
+        <!-- Encabezado de la sección -->
+        <header class="text-center mb-5">
+            <h2 class="display-5 mb-3">Explora nuestras áreas de trabajo</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                Ofrecemos terapia en diversas áreas para ayudarte a mejorar tu bienestar emocional y psicológico.
+                Cada proceso es personalizado, adaptándonos a tus necesidades individuales.
+            </p>
+        </header>
+
+        <!-- Áreas de trabajo -->
+        <!-- Terapia para adultos -->
+        <div class="row align-items-center mb-5 area-card">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/terapiaparadultos1.jpg" alt="Terapia para adultos" 
+                     class="img-fluid rounded-lg shadow-lg" style="object-fit: cover; height: 400px; width: 100%;">
+            </div>
+            <div class="col-lg-6">
+                <div class="ps-lg-4">
+                    <h3 class="h2 mb-4">Terapia para adultos</h3>
+                    <div class="area-tags">
+                        <span class="categoria mb-2">Alteraciones en el estado del ánimo</span>
+                        <span class="categoria mb-2">Ansiedad</span>
+                        <span class="categoria mb-2">Duelo</span>
+                        <span class="categoria mb-2">Trastornos de la personalidad</span>
+                        <span class="categoria mb-2">Autoestima</span>
+                        <span class="categoria mb-2">Estrés</span>
+                        <span class="categoria mb-2">Trastornos de la conducta alimentaria</span>
+                        <span class="categoria mb-2">Maltrato</span>
+                        <span class="categoria mb-2">Adicciones</span>
+                        <span class="categoria mb-2">Educación parental</span>
+                        <span class="categoria mb-2">Problemas familiares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terapia infanto-juvenil -->
+        <div class="row align-items-center mb-5 area-card flex-lg-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/terapiainfantojuvenil1.jpg" alt="Terapia infanto-juvenil" 
+                     class="img-fluid rounded-lg shadow-lg" style="object-fit: cover; height: 400px; width: 100%;">
+            </div>
+            <div class="col-lg-6">
+                <div class="pe-lg-4">
+                    <h3 class="h2 mb-4">Terapia infanto-juvenil</h3>
+                    <div class="area-tags">
+                        <span class="categoria mb-2">Gestión emocional</span>
+                        <span class="categoria mb-2">Ansiedad</span>
+                        <span class="categoria mb-2">Duelo</span>
+                        <span class="categoria mb-2">Dificultades académicas</span>
+                        <span class="categoria mb-2">Autoestima</span>
+                        <span class="categoria mb-2">Acoso escolar</span>
+                        <span class="categoria mb-2">Relaciones sociales</span>
+                        <span class="categoria mb-2">Miedos</span>
+                        <span class="categoria mb-2">Gestión de la frustración</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terapia de pareja -->
+        <div class="row align-items-center mb-5 area-card">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/terapiadepareja2.jpg" alt="Terapia de pareja" 
+                     class="img-fluid rounded-lg shadow-lg" style="object-fit: cover; height: 400px; width: 100%;">
+            </div>
+            <div class="col-lg-6">
+                <div class="ps-lg-4">
+                    <h3 class="h2 mb-4">Terapia de pareja</h3>
+                    <div class="area-tags">
+                        <span class="categoria mb-2">Comunicación</span>
+                        <span class="categoria mb-2">Infidelidad</span>
+                        <span class="categoria mb-2">Celos</span>
+                        <span class="categoria mb-2">Sexualidad</span>
+                        <span class="categoria mb-2">Crisis de pareja</span>
+                        <span class="categoria mb-2">Dinámicas de comunicación</span>
+                        <span class="categoria mb-2">Reparto de responsabilidades</span>
+                        <span class="categoria mb-2">Educación parental</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terapia familiar -->
+        <div class="row align-items-center area-card flex-lg-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/terapiadefamilia2.jpg" alt="Terapia familiar" 
+                     class="img-fluid rounded-lg shadow-lg" style="object-fit: cover; height: 400px; width: 100%;">
+            </div>
+            <div class="col-lg-6">
+                <div class="pe-lg-4">
+                    <h3 class="h2 mb-4">Terapia familiar</h3>
+                    <div class="area-tags">
+                        <span class="categoria mb-2">Establecimiento de límites</span>
+                        <span class="categoria mb-2">Patrones de comunicación</span>
+                        <span class="categoria mb-2">Crisis familiares</span>
+                        <span class="categoria mb-2">Separación/Divorcio</span>
+                        <span class="categoria mb-2">Roles familiares</span>
+                        <span class="categoria mb-2">Manejo de conflictos</span>
+                        <span class="categoria mb-2">Gestión emocional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Testimonios -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Lo que dicen mis pacientes</h2>
+            
+            <div class="row">
+                <!-- Testimonio 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonio-text">"Gracias a Nerea he podido superar mi ansiedad y recuperar el control de mi vida. 
+                           Su profesionalidad y cercanía hacen que te sientas comprendido desde el primer momento."</p>
+                        <div class="author-info">
+                            <img src="img/testimonio1.jpg" alt="Testimonio">
+                            <div>
+                                <h5 class="mb-0">María G.</h5>
+                                <small class="text-muted">Paciente de terapia individual</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonio-text">"El proceso terapéutico con Nerea nos ayudó a reconectar como pareja. 
+                           Ahora tenemos herramientas para gestionar mejor nuestros conflictos."</p>
+                        <div class="author-info">
+                            <img src="img/testimonio2.jpg" alt="Testimonio">
+                            <div>
+                                <h5 class="mb-0">Carlos y Ana</h5>
+                                <small class="text-muted">Terapia de pareja</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonio-text">"Como familia, hemos aprendido a comunicarnos mejor y a entendernos. 
+                           Nerea nos ha guiado con paciencia y profesionalidad en todo momento."</p>
+                        <div class="author-info">
+                            <img src="img/testimonio3.jpg" alt="Testimonio">
+                            <div>
+                                <h5 class="mb-0">Familia Rodríguez</h5>
+                                <small class="text-muted">Terapia familiar</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la consulta -->
+                <div class="col-md-4">
+                    <p class="footer-name">Nerea Ternero</p>
+                    <p>Psicóloga Especialista</p>
+                    <p>Nº Colegiada: AN11560</p>
+                </div>
+                
+                <!-- Horario -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Horario de Atención</h5>
+                    <p>Lunes a Viernes: 9:00 - 21:00</p>
+                    <p>Consulta presencial y online</p>
+                </div>
+                
+                <!-- Redes sociales -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Sígueme en redes</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <small>&copy; 2025 Nerea Ternero. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
