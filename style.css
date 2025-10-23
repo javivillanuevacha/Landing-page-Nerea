@@ -279,7 +279,7 @@ p {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
   color: var(--verde-oscuro);
 }
 
@@ -310,7 +310,7 @@ p {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -326,12 +326,25 @@ p {
   justify-content: center;
   width: 35px;
   height: 35px;
+  margin-right: -3;
 }
 
 .social-icon:hover {
   background-color: var(--verde-claro);
   transform: translateY(-2px);
   box-shadow: var(--sombra-sm);
+}
+
+.footer-logos {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  max-width: 120px;
+  height: auto;
 }
 
 /* ========== PÁGINA DE CONTACTO ========== */
@@ -549,5 +562,31 @@ p {
   .whatsapp-float img {
     width: 30px;
     height: 30px;
+  }
+}
+
+/*footer movil centrar todo*/
+
+/* Responsive para móvil */
+@media (max-width: 767px) {
+  .footer .row > div {
+    text-align: center;
+  }
+
+  .footer-heading {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-logos {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .footer .col-md-3 {
+    margin-bottom: 2rem;
   }
 }
